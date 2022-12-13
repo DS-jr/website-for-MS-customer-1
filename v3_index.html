@@ -5,6 +5,7 @@
     <title>M.S.</title>
     <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -75,8 +76,22 @@
         .footer {
             padding: 10px;
             text-align: center;
-            background: #ddd;
+            background: rgb(214, 183, 183);
         }
+
+        .flex-container {
+            display: flex;
+            height: 100px;
+            background-color: lightgrey;
+        }
+        
+        .flex-item {
+            background-color: rgb(229, 209, 167);
+            width: 25%;
+            height: 120px;
+            margin: 10px;
+        }
+
     </style>
 </head>
 
@@ -100,9 +115,28 @@
     <div class="bg"></div>
     <h1>?About</h1>
 
+<!-- Proceed w/ this Tutorial (horizontal bar about Partners, Projects, etc): https://www.w3schools.com/howto/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h --> 
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">   <!-- ?? --> 
+        <div class="w3-quarter w3-section">  <!-- ?? --> 
+            <span class="w3-xlarge">11+</span><br> <!-- ?? --> 
+            Partners    
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">55+</span><br>
+            Projects Done
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">345 clients</div>
+        <div class="flex-item">'5 star reviews' (or '10/10' reviews) - 95% of clients</div>
+        <div class="flex-item">85% retention ('repeat' clients)</div>
+        <div class="flex-item">$5M+ average budget</div>
+    </div>
     <div class="footer">
         <h2>fooTer</h2>
     </div>
+
+
 </body>
 
 </html>
